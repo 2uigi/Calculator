@@ -1,12 +1,12 @@
 package com.example.calculator;
 
-public abstract class Printer {
+public interface Printer {
 
-    public static void print(String toPrint){
+    static void print(String toPrint){
         System.out.println(toPrint);
     }
 
-    public static void printErr(){
+    static void printErr(){
         System.err.println("An error Occurred, restarting BinaryCalculator");
     }
 }
